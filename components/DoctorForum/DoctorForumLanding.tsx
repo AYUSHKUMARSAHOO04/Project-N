@@ -243,7 +243,7 @@ const DoctorForumLanding = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                Doctor's <span className="text-blue-400">Community</span>
+                 <span className="text-blue-400">CuraForgeX</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">
                 NirveonX Omnicare
@@ -833,7 +833,7 @@ const DoctorForumLanding = () => {
                     href="/forum"
                     className="hover:text-white transition-colors"
                   >
-                    Doctor's Forum
+                    CuraForgeX
                   </Link>
                 </li>
                 <li>

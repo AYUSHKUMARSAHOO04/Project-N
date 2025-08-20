@@ -22,7 +22,7 @@ const chatBotServices: ChatBotService[] = [
     getStarted: "/fitronx",
   },
   {
-    chatbot_name: "Doctor's Community Forum",
+    chatbot_name: "CuraForgeX",
     image: "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1753544249/download_fwleh3.jpg",
     description:
       "",
