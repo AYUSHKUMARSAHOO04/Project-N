@@ -48,6 +48,24 @@ export const teamMembers: TeamMember[] = [
       "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742611239/WhatsApp_Image_2025-03-22_at_02.59.32_1_lkl4ce.jpg",
   },
   {
+    id: "Cooooo",
+    name: "Sanjana Chaudhary",
+    role: "COO",
+    category: "leadership",
+    education: "BTECH (CSE), NIST",
+    avatar:
+      "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1750670920/bq1ewdubbpnfizmjt9a4.jpg",
+  },
+  {
+    id: "Chooo",
+    name: "Deepti Manjari Nayak",
+    role: "CHO",
+    category: "leadership",
+    education: "BTECH (CSE), NIST",
+    avatar:
+      "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1750666091/sdc73yjkpzu952rpi9ku.jpg",
+  },
+  {
     id: "co-founder and coo",
     name: "Kasu Naren Karthik Raju",
     role: "Co-Founder and COO",
@@ -56,12 +74,21 @@ export const teamMembers: TeamMember[] = [
     avatar:
       "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742975939/WhatsApp_Image_2025-03-26_at_03.47.39_x6oljd.jpg",
   },
+  {
+    id: "cto",
+    name: "Saumik Chakraborty",
+    role: "CTO",
+    category: "leadership",
+    education: "BTECH CSE (NIST)",
+    avatar:
+      "https://ik.imagekit.io/c8zodaoqg/SaumikCTO.jpg?updatedAt=1755835577146",
+  },
   //employees
   //interns
   {
     id: "sybrite",
     name: "Harsh Verma",
-    role: "Full Stack Developer Intern & Dev. Team Lead",
+    role: "Full Stack Intern & Dev. Team Lead",
     category: "intern",
     education: "BTECH(Chemical Eng.) , NIT Rourkela",
     avatar:

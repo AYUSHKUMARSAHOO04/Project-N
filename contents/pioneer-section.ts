@@ -30,12 +30,12 @@ export const pioneers: TeamMember[] = [
   },
   {
     id: "Cto",
-    name: "Ashwani Senapati",
+    name: "Saumik Chakraborty",
     role: "CTO",
     description:
-      "Ashwani Senapati is a Full Stack Developer and emerging tech leader from NIT Rourkela, with a strong foundation in web development, machine learning, and blockchain technologies. His portfolio includes award-winning projects like Hexadepth, a medical AI tool that won a hackathon for transforming DICOM images into 3D models using GANs.He has built platforms for IEEE INDISCON 2025, BookingJini, and HackOdisha, showcasing his ability to blend user-focused design with powerful backend architecture. Currently leading the tech vision at NirveonX, Ashwani combines deep technical skills with a passion for innovation to build smart, scalable, and impactful healthcare solutions.",
+      "Saumik Chakraborty is the Chief Intelligence Officer(CIO) at NirveonX and a final-year B.Tech CSE student at NIST University. A passionate machine learning engineer, he specializes in AI, backend development, and data engineering. As a finalist in the Infosys Global Hackathon and Hack4Bihar, Saumik has built solutions like AI Interviewer, LinguaBridge, and GroqAI Chatbot. At NirveonX, he leads the development of intelligent systems that power AI-driven healthcare—ranging from mental health bots to multilingual sentiment engines—combining technical expertise with a user-first approach to deliver scalable, impactful solutions that align with the company’s mission of responsible, tech-enabled innovation.",
     avatar:
-      "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742124405/ashwani_pqhesg.png",
+      "https://ik.imagekit.io/c8zodaoqg/SaumikCTO.jpg?updatedAt=1755835577146",
   },
   // {
   //   id: "Cooooo",

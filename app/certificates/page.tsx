@@ -17,11 +17,11 @@ export default function CertificatesPage() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const allMembers = [
-    ...pioneers.map((p) => ({ ...p, category: "leadership" as const })),
-    ...additionalPioneer.map((p) => ({
-      ...p,
-      category: "leadership" as const,
-    })),
+    // ...pioneers.map((p) => ({ ...p, category: "leadership" as const })),
+    // ...additionalPioneer.map((p) => ({
+    //   ...p,
+    //   category: "leadership" as const,
+    // })),
     ...teamMembers,
   ];
 
