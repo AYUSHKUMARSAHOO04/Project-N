@@ -25,8 +25,15 @@ const chatBotServices: ChatBotService[] = [
     chatbot_name: "CuraForgeX",
     image: "https://ik.imagekit.io/c8zodaoqg/CuraForgeX.jpg?updatedAt=1755677599400",
     description:
-      "",
+      "CuraForgeX unites healthcare professionals across four domains, driving collaboration, better patient care, and professional growth.",
     getStarted: "/forum",
+  },
+  {
+    chatbot_name: "Wellip",
+    image: "https://ik.imagekit.io/c8zodaoqg/Wellip_.png?updatedAt=1755849325480",
+    description:
+      "Wellip is a gamified wellness platform for all ages, helping users build healthy habits, emotional resilience, and better lifestyle choices through simple, bite-sized lessons.",
+    getStarted: "/wellip",
   },
 ];
 
