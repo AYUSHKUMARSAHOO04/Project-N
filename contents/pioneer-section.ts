@@ -35,7 +35,7 @@ export const pioneers: TeamMember[] = [
     description:
       "Saumik Chakraborty is the Chief Intelligence Officer(CIO) at NirveonX and a final-year B.Tech CSE student at NIST University. A passionate machine learning engineer, he specializes in AI, backend development, and data engineering. As a finalist in the Infosys Global Hackathon and Hack4Bihar, Saumik has built solutions like AI Interviewer, LinguaBridge, and GroqAI Chatbot. At NirveonX, he leads the development of intelligent systems that power AI-driven healthcare—ranging from mental health bots to multilingual sentiment engines—combining technical expertise with a user-first approach to deliver scalable, impactful solutions that align with the company’s mission of responsible, tech-enabled innovation.",
     avatar:
-      "https://ik.imagekit.io/c8zodaoqg/SaumikCTO.jpg?updatedAt=1755835577146",
+      "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1755869468/SaumikCTO_meehnf.jpg",
   },
   // {
   //   id: "Cooooo",

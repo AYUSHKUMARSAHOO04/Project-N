@@ -23,7 +23,7 @@ const chatBotServices: ChatBotService[] = [
   },
   {
     chatbot_name: "CuraForgeX",
-    image: "https://ik.imagekit.io/c8zodaoqg/CuraForgeX.jpg?updatedAt=1755677599400",
+    image: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1755869157/CuraForgeX_tp52fg.jpg",
     description:
       "CuraForgeX unites healthcare professionals across four domains, driving collaboration, better patient care, and professional growth.",
     getStarted: "/forum",
@@ -54,7 +54,7 @@ const useMediaQuery = (query: string) => {
     return () => media.removeEventListener("change", listener);
   }, [query]);
 
-  return matches;
+return matches;
 };
 
 const CommunityServicesPage = () => {
