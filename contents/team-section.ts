@@ -257,24 +257,6 @@ export const teamMembers: TeamMember[] = [
       "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742067857/riddhi_yy5gen.jpg",
   },
   {
-    id: "tanbir-aproose-laskar",
-    name: "Tanbir Aproose Laskar",
-    role: "AI/ML Intern",
-    category: "intern",
-    education: "BTECH (Civil) , NIT Silchar",
-    avatar:
-      "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742067854/laskar_bcmn8f.jpg",
-  },
-  {
-    id: "suhas-tg",
-    name: "Suhas TG",
-    role: "AI/ML Intern",
-    category: "intern",
-    education: "BE (ISE) , RIT",
-    avatar:
-      "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742067853/suhas_kweijj.jpg",
-  },
-  {
     id: "teja-tanush",
     name: "Teja Tanush",
     role: "AIML Intern & Data Analyst Intern",
@@ -282,15 +264,6 @@ export const teamMembers: TeamMember[] = [
     education: "BTECH ( Computer Science ) , IIIT Bhopal",
     avatar:
       "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742067853/teja_mhj3lg.jpg",
-  },
-  {
-    id: "md-musharaf-ahmed",
-    name: "MD Musharaf Ahmed",
-    role: "Full Stack Developer Intern",
-    category: "intern",
-    education: "BTECH ( AIML ) , JNTUH",
-    avatar:
-      "https://res.cloudinary.com/dqqyuvg1v/image/upload/v1742211836/ahmed_neqdj5.png",
   },
   {
     id: "padma-banda",

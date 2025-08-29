@@ -56,7 +56,6 @@ const useMediaQuery = (query: string) => {
 
 return matches;
 };
-
 const CommunityServicesPage = () => {
   const isMobile = useMediaQuery("(max-width: 767px)");
   const [isLoaded, setIsLoaded] = useState(false);
