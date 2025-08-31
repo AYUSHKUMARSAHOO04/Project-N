@@ -20,7 +20,7 @@ type XrayAnalysisData = {
 export default function ChestXray() {
   const [inputValue, setInputValue] = useState<string>('');
   const [initialMessage, setInitialMessage] = useState<string>('Welcome to the Chest X-ray Analysis section. Upload a chest X-ray image or ask questions about chest X-rays.');
-  const apiUrl="https://chest-xray-vf3b.onrender.com"
+  const apiUrl="https://chest-xray-1093207603442.us-central1.run.app/health"
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);

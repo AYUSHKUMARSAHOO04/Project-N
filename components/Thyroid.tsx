@@ -34,7 +34,7 @@ type ChatHistoryItem = {
 export default function Thyroid() {
   const [inputValue, setInputValue] = useState<string>('');
   const [initialMessage] = useState<string>('Welcome to the Thyroid CT Analysis section. Please upload a Thyroid CT scan image first to begin analysis and discussion.');
-  const apiUrl = "https://thyroid-api.onrender.com"; // Update this to your API URL
+  const apiUrl = "https://thyroid-1093207603442.us-central1.run.app"; // Update this to your API URL
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);

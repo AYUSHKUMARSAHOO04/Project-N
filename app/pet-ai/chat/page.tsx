@@ -254,13 +254,13 @@ export default function PetAIPage() {
           formData.append('message', messageText);
         }
 
-        response = await fetch("https://pet-ai-662622027382.europe-west1.run.app/chat", {
+        response = await fetch("https://animal-skin-1093207603442.us-central1.run.app/health", {
           method: "POST",
           body: formData,
         });
       } else {
         // Send as JSON for text-only
-        response = await fetch("https://pet-ai-662622027382.europe-west1.run.app/chat", {
+        response = await fetch("https://animal-skin-1093207603442.us-central1.run.app/health", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

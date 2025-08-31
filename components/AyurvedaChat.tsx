@@ -20,7 +20,7 @@ type ChatHistoryItem = {
   messages: Message[];
 };
 
-const API_BASE_URL = "https://ayurveda-chat-662622027382.europe-west1.run.app";
+const API_BASE_URL = "https://ayurvedic-1093207603442.us-central1.run.app/health";
 
 export default function AyurvedaChat() {
   const [inputValue, setInputValue] = useState<string>('');
