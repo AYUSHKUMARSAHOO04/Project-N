@@ -126,10 +126,13 @@ export async function GET() {
                   {case:{$eq: ["$name", "Vishal Kavali "]}, then: 2},
                   { case: { $eq: ["$name", "Kavali Deekshith"] }, then: 3 },
                   { case: { $eq: ["$name", "Ayush Kumar Sahoo"] }, then: 4}, // Removed trailing space
-                  { case: { $eq: ["$name", "Ashwani Senapati"] }, then: 4 },
+                  // { case: { $eq: ["$name", "Ashwani Senapati"] }, then: 4 },
                   { case: { $eq: ["$name", "Sumedha Musunuri"] }, then: 5 }, 
-                  {case: {$eq: ["$name", "Sanjana Chaudhary"]}, then: 6},
-                  {case:{$eq: ["$name", "Deepti Manjari Nayak"]}, then: 7},
+                  {case:{$eq: ["$name", "Saumik Chakraborty"]}, then: 6},
+                  {case: {$eq: ["$name", "Sanjana Chaudhary"]}, then: 7},
+                  {case:{$eq: ["$name", "Deepti Manjari Nayak"]}, then: 8},
+                  {case:{$eq: ["$name", "Lochan Kumar Chalamalla"]}, then: 9},
+                  
 
                 ],
                 default: 99,
