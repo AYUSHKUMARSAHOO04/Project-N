@@ -57,15 +57,15 @@ export const pioneers: TeamMember[] = [
   // }
 ];
 export  const additionalPioneer: TeamMember[] = [
-  {
-    id: "Cooooo",
-    name: "Sanjana Chaudhary",
-    role: "COO",
-    description:
-      "Sanjana Chaudhary is the Chief Operating Officer at NirveonX, where she turns big ideas into real-world impact. A final-year Computer Science undergraduate, she keeps the engine running - aligning teams, streamlining operations, and ensuring every part of the company works in sync to deliver affordable, AI-powered healthcare. From managing product rollouts to supporting doctors and patients, Sanjana ensures that innovation at NirveonX stays grounded in care, clarity, and execution.",
-    avatar:
-      "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1750670920/bq1ewdubbpnfizmjt9a4.jpg",
-  },
+  // {
+  //   id: "Cooooo",
+  //   name: "Sanjana Chaudhary",
+  //   role: "COO",
+  //   description:
+  //     "Sanjana Chaudhary is the Chief Operating Officer at NirveonX, where she turns big ideas into real-world impact. A final-year Computer Science undergraduate, she keeps the engine running - aligning teams, streamlining operations, and ensuring every part of the company works in sync to deliver affordable, AI-powered healthcare. From managing product rollouts to supporting doctors and patients, Sanjana ensures that innovation at NirveonX stays grounded in care, clarity, and execution.",
+  //   avatar:
+  //     "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1750670920/bq1ewdubbpnfizmjt9a4.jpg",
+  // },
   {
     id: "CFO",
     name: "Chalamalla Lochan Kumar",
