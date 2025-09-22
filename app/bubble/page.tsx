@@ -1,4 +1,7 @@
 "use client";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 import CustomCursor from '@/components/shared/custom-cursor';
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
@@ -19,6 +22,10 @@ interface Bubble {
 }
 
 export default function BubblePage() {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+
   const [bubbles, setBubbles] = useState<Bubble[]>([]);
   const [gameActive, setGameActive] = useState(false);
   const [timeLeft, setTimeLeft] = useState(20);
@@ -36,6 +43,23 @@ export default function BubblePage() {
   const gameStartTime = useRef(0);
   const bubblesRef = useRef<Bubble[]>([]);
   bubblesRef.current = bubbles;
+
+  //checking user authentication
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/auth/user", {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
 
   // Initialize client-side state and load high score
   useEffect(() => {
@@ -270,6 +294,15 @@ export default function BubblePage() {
   if (!isClient) {
     return <div className="w-full h-screen bg-gradient-to-b from-gray-900 via-slate-900 to-black" />;
   }
+
+  if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
+  
 
   return (
     <div 

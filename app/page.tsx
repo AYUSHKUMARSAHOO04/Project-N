@@ -23,6 +23,7 @@ import Nav from "@/components/Nav/nav";
 // import Fitarth from "@/components/CommunityServices/fitronx-Card";
 import VisionMissionCards from "@/components/visionmissioncards";
 import Image from "next/image";
+  import { ToastContainer } from 'react-toastify';
 
 export default function Home() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -84,6 +85,7 @@ export default function Home() {
             {/* <FaqSection />  */}
             <Footer />
             <FloatingChatbot />
+            <ToastContainer />
           </>
         )}
       </main>

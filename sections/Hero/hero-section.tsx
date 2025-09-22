@@ -9,6 +9,7 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import Image from "next/image";
+import Signup from '@/components/Auth/signup';
 
 const SPRING_CONFIG = { damping: 30, stiffness: 400, mass: 1 };
 const ROTATING_WORDS = ["Health", "Wellness&", "Beyond"];
@@ -79,6 +80,8 @@ export default function HeroSection() {
       ref={ref}
       className="h-screen items-center justify-center px-4 relative overflow-hidden"
     >
+      {/* //15.0 */}
+      <Signup/>
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <div className="absolute inset-0 z-0">
           <Image
@@ -99,6 +102,7 @@ export default function HeroSection() {
           className="absolute top-[30%] left-1/6 sm:left-[35%] sm:top-[60%] sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 z-10 w-full md:w-auto"
           style={{ scale }}
         >
+        
           <motion.div className="flex flex-col items-start justify-center space-y-2 max-w-lg md:max-w-xl lg:max-w-3xl">
             <motion.h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">
               OneAI.

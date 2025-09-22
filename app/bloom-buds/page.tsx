@@ -1,5 +1,8 @@
 'use client';
 
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 import CustomCursor from '@/components/shared/custom-cursor';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -33,6 +36,11 @@ const ACTIVE_DURATION = 2000;
 const GAME_DURATION = 30;
 
 export default function BloomGame() {
+  //20.0
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const router = useRouter();
+
     const containerRef = useRef<HTMLDivElement>(null);
     const [buds, setBuds] = useState<Bud[]>([]);
     const [tapCount, setTapCount] = useState(0);
@@ -49,6 +57,25 @@ export default function BloomGame() {
     const playCorrect = useSound('/sounds/correct-tap.mp3');
     const playMiss = useSound('/sounds/wrong-tap.mp3');
     const playGameOver = useSound('/sounds/game-over.mp3');
+
+    //20.1
+    useEffect(() => {
+    axios
+      .get("http://localhost:8080/auth/user", {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
+
+  
 
     useEffect(() => {
         const stored = localStorage.getItem('bloomGameBestStats');
@@ -201,6 +228,15 @@ export default function BloomGame() {
     const handleRestartGame = () => {
         window.location.reload();
     };
+
+    //20.2
+    if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
 
     return (
         <div

@@ -1,4 +1,6 @@
 "use client";
+import axios from "axios";
+
 import { ThemeProvider } from "next-themes";
 import ParticlesBackground from "@/components/shared/particle-background";
 import NoiseTexture from "@/components/shared/noise-texture";
@@ -49,6 +51,27 @@ const SUPPORTED_LANGUAGES = {
 };
 
 export default function AyurvedaChat() {
+  const [user, setUser] = useState(null);
+    const [authloading, setAuthLoading] = useState(true);
+    const router = useRouter();
+
+     //checking user authentication
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/auth/user", {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setAuthLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setAuthLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
+    
   const [inputValue, setInputValue] = useState<string>('');
   const [initialMessage] = useState<string>('Hey! Choose your preferred persona and language to get started. How can I help you today?');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -58,7 +81,7 @@ export default function AyurvedaChat() {
   const [conversation, setConversation] = useState<any[]>([]);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
+
   const containerRef = useRef<HTMLDivElement>(null);
 
   // New state for persona and language
@@ -306,6 +329,14 @@ export default function AyurvedaChat() {
     setSelectedLanguage(language);
     setShowLanguageSelector(false);
   };
+
+  if (authloading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">

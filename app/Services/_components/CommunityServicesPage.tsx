@@ -35,6 +35,13 @@ const chatBotServices: ChatBotService[] = [
       "Wellip is a gamified wellness platform for all ages, helping users build healthy habits, emotional resilience, and better lifestyle choices through simple, bite-sized lessons.",
     getStarted: "/wellip",
   },
+  {
+    chatbot_name: "PharmXPlus",
+    image: "https://res.cloudinary.com/dssaftaaa/image/upload/v1757770371/WhatsApp_Image_2025-09-13_at_18.41.58_bfa6ce75_qdwrsk.jpg",
+    description:
+      "Digital pharmacy platform with medicine delivery and subscription services.",
+    getStarted: "/pharmxplus",
+  },
 ];
 
 const useMediaQuery = (query: string) => {

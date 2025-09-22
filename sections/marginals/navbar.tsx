@@ -7,6 +7,7 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { Logo } from "@/components/NavBar/NavLogo";
 import { HamburgerButton } from "@/components/NavBar/HamburgerButton";
 import { MobileMenu } from "@/components/NavBar/MobileMenu";
+import Signup from '@/components/Auth/signup';
 import {
   SignInButton,
   SignUpButton,
@@ -121,10 +122,12 @@ export default function Navbar({ scrolled }: NavbarProps) {
                   whileTap={{ scale: 0.95 }}
                 >
                   <div className="bg-black text-white hover:bg-gray-800 text-sm px-3 py-2">
-                    <SignInButton />
+                    {/* <SignInButton /> */}
+                    
                   </div>
                 </motion.div>
               </SignedOut>
+              
 
               <SignedIn>
                 <motion.div

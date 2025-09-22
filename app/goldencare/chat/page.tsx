@@ -5,7 +5,7 @@ import {
   CircleArrowLeft, 
   LogOut, 
   MenuIcon, 
-  Mic, 
+  Mic,
   Plus,
   Send, 
   Settings, 
@@ -48,7 +48,7 @@ export default function GoldencarePage() {
   const API_URL = 'https://healthcare-chatbot-662622027382.europe-west1.run.app/chat';
 
   // Get current chat
-  const currentChat = chatSessions.find((chat) => chat.id === currentChatId) || null;4
+  const currentChat = chatSessions.find((chat) => chat.id === currentChatId) || null;
 
   // Load chat sessions from localStorage on initial render
   useEffect(() => {
@@ -558,7 +558,7 @@ function BotBubble({ children }: { children: React.ReactNode }) {
   return (
     <div className="mr-auto flex max-w-[90%] md:max-w-[80%] lg:max-w-[75%] mb-4">
       <div className="relative group">
-        {/* Health iconn for avatar */}
+        {/* Health icon for avatar */}
         <div className="absolute -left-10 top-0 w-8 h-8 rounded-full bg-amber-600 flex items-center justify-center shadow-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
