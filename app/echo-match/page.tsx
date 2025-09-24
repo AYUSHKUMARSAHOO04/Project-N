@@ -238,13 +238,13 @@ export default function GamePage() {
             )}
 
             {currentAudio && (
-                <div className="flex space-x-4 mt-2 flex-wrap justify-center">
+                <div className="flex space-x-4 flex-wrap justify-center">
                     {emotions.map((emotion) => (
                         <motion.button
                             key={emotion}
                             onClick={() => handleSelection(emotion)}
                             disabled={selectedEmotion !== null}
-                            className={`px-6 py-3 rounded-xl text-black text-lg font-semibold shadow-md transition-all ${selectedEmotion === emotion
+                            className={`px-6 mt-4 py-3 rounded-xl text-black text-lg font-semibold shadow-md transition-all ${selectedEmotion === emotion
                                 ? emotion === correctEmotion
                                     ? "bg-green-400"
                                     : "bg-red-400"
