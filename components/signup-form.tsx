@@ -175,25 +175,25 @@
 //   )
 // }
 import React from 'react'
-import {
-  ClerkProvider,
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs'
+// import {
+//   ClerkProvider,
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton,
+// } from '@clerk/nextjs'
 
 const SignupForm = () => {
   return (
     <div>
-        <SignedOut>
+        {/* <SignedOut>
               <SignInButton />
               <SignUpButton />
         </SignedOut>
             <SignedIn>
               <UserButton />
-            </SignedIn>
+            </SignedIn> */}
     </div>
   )
 }

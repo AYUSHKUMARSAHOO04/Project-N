@@ -1,4 +1,7 @@
 "use client";
+
+import axios from "axios";
+
 import { ThemeProvider } from "next-themes";
 import ParticlesBackground from "@/components/shared/particle-background";
 import NoiseTexture from "@/components/shared/noise-texture";
@@ -37,6 +40,28 @@ const SUPPORTED_LANGUAGES = {
 };
 
 export default function IndianGrandparentChat() {
+  const [user, setUser] = useState(null);
+    const [authloading, setAuthLoading] = useState(true);
+    const router = useRouter();
+
+    //checking user authentication
+  useEffect(() => {
+    const base = process.env.NEXT_PUBLIC_API_URL;
+    axios
+      .get(`${base}/auth/user`, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setAuthLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setAuthLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
+
   const [inputValue, setInputValue] = useState<string>('');
   const [initialMessage] = useState<string>('Namaste beta! How is my little star today? Choose your language and tell your Nana what\'s on your mind! 🧓❤️');
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -45,7 +70,7 @@ export default function IndianGrandparentChat() {
   const [chatHistory, setChatHistory] = useState<ChatHistoryItem[]>([]);
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
+
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Language selection
@@ -276,6 +301,14 @@ export default function IndianGrandparentChat() {
       return false;
     }
   };
+
+  if (authloading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">

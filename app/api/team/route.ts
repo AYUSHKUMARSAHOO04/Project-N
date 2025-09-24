@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
         }
 
         // Connect to MongoDB first to check for duplicates
-        const uri = `mongodb+srv://ayushgudu004:6LzvwmkVwbLa5WJR@interndata.yg4nqdi.mongodb.net/`;
+        const uri = `mongodb+srv://ayushgudu004:6LzvwmkVwbLa5WJR@interndata.yg4nqdi.mongodb.net/?retryWrites=true&w=majority&appName=internData`;
         const client = new MongoClient(uri);
         await client.connect();
 
@@ -108,12 +108,13 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   try {
-    const uri = `mongodb+srv://ayushgudu004:6LzvwmkVwbLa5WJR@interndata.yg4nqdi.mongodb.net/`;
+    const uri = `mongodb+srv://ayushgudu004:6LzvwmkVwbLa5WJR@interndata.yg4nqdi.mongodb.net/?retryWrites=true&w=majority&appName=internData`;
     const client = new MongoClient(uri);
     await client.connect();
 
     const db: Db = client.db("internData");
     const collection: Collection<TeamMember> = db.collection("internData");
+ 
 
     const teamMembers = await collection
       .aggregate([
@@ -129,9 +130,9 @@ export async function GET() {
                   // { case: { $eq: ["$name", "Ashwani Senapati"] }, then: 4 },
                   { case: { $eq: ["$name", "Sumedha Musunuri"] }, then: 5 }, 
                   {case:{$eq: ["$name", "Saumik Chakraborty"]}, then: 6},
-                  {case: {$eq: ["$name", "Sanjana Chaudhary"]}, then: 7},
-                  {case:{$eq: ["$name", "Deepti Manjari Nayak"]}, then: 8},
-                  {case:{$eq: ["$name", "Lochan Kumar Chalamalla"]}, then: 9},
+                  // {case: {$eq: ["$name", "Sanjana Chaudhary"]}, then: 7},
+                  {case:{$eq: ["$name", "Deepti Manjari Nayak"]}, then: 7},
+                  {case:{$eq: ["$name", "Lochan Kumar Chalamalla"]}, then: 8},
                   
 
                 ],
@@ -145,6 +146,7 @@ export async function GET() {
         { $project: { sortPriority: 0, originalOrder: 0 } }
       ])
       .toArray();
+      // console.log(teamMembers);
 
     await client.close();
 

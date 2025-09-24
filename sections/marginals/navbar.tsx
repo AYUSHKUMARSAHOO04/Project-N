@@ -7,13 +7,14 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 import { Logo } from "@/components/NavBar/NavLogo";
 import { HamburgerButton } from "@/components/NavBar/HamburgerButton";
 import { MobileMenu } from "@/components/NavBar/MobileMenu";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+import Signup from '@/components/Auth/signup';
+// import {
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton,
+// } from "@clerk/nextjs";
 
 // Constants
 export const NAV_ITEMS = [
@@ -115,18 +116,20 @@ export default function Navbar({ scrolled }: NavbarProps) {
 
             <div className="flex items-center gap-3">
               {/* Mobile Auth Buttons */}
-              <SignedOut>
+              {/* <SignedOut>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   <div className="bg-black text-white hover:bg-gray-800 text-sm px-3 py-2">
-                    <SignInButton />
+                    
+                    
                   </div>
                 </motion.div>
-              </SignedOut>
+              </SignedOut> */}
+              
 
-              <SignedIn>
+              {/* <SignedIn>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -143,7 +146,7 @@ export default function Navbar({ scrolled }: NavbarProps) {
                     }}
                   />
                 </motion.div>
-              </SignedIn>
+              </SignedIn> */}
 
               {/* Hamburger Menu Button */}
               <HamburgerButton isOpen={isOpen} toggleMenu={toggleMenu} />

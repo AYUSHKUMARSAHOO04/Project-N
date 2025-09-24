@@ -1,5 +1,8 @@
 "use client";
 
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 import React, { useState, useEffect } from 'react';
 import { 
   Card, 
@@ -38,9 +41,31 @@ import { motion, AnimatePresence } from 'framer-motion';
 import CreateUserProfile from '@/components/GoldenCare/CreateUserProfile';
 import ParticlesBackground from '@/components/shared/particle-background';
 // API URL - Replace with your actual API URL when deploying
-const API_URL = 'https://goldencare-api.onrender.com' ;
+const API_URL = 'https://grandparent-1063553229026.asia-south1.run.app' ;
 
 const HealthCheckInPage = () => {
+  const [user, setUser] = useState(null);
+    const [authloading, setAuthLoading] = useState(true);
+    const router = useRouter();
+
+    //checking user authentication
+  // useEffect(() => {
+  //   const base = process.env.NEXT_PUBLIC_API_URL;
+  //   axios
+  //     .get(`${base}/auth/user`, {
+  //       withCredentials: true,
+  //     })
+  //     .then((res) => {
+  //       setUser(res.data.user);
+  //       setAuthLoading(false);
+  //     })
+  //     .catch(() => {
+  //       setUser(null);
+  //       setAuthLoading(false);
+  //       router.push("/signup");
+  //     });
+  // }, [router]);
+
   // State for user name entry
   const [name, setName] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -189,6 +214,14 @@ const HealthCheckInPage = () => {
     }
   }, [message]);
 
+  // if (authloading) {
+  //   return (
+  //     <div className="flex h-screen items-center justify-center text-white">
+  //       Loading...
+  //     </div>
+  //   );
+  // }
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-gray-950 text-white p-4 relative overflow-hidden">
       <ParticlesBackground/>

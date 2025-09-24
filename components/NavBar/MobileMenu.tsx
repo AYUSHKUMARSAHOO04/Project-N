@@ -1,13 +1,13 @@
 import { ANIMATIONS, NAV_ITEMS } from "@/sections/marginals/navbar";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button } from "../ui/button";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+// import {
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton,
+// } from "@clerk/nextjs";
 
 export const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (open: boolean) => void }) => (
     <AnimatePresence>
@@ -55,7 +55,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: 
             <motion.div variants={ANIMATIONS.item} className="mt-auto">
               <div className="flex flex-row gap-3">
                 {/* Sign In Button */}
-                <SignedOut>
+                {/* <SignedOut>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -64,10 +64,10 @@ export const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: 
                       <SignInButton />
                     </div>
                   </motion.div>
-                </SignedOut>
+                </SignedOut> */}
 
                 {/* User Button when signed in */}
-                <SignedIn>
+                {/* <SignedIn>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -86,10 +86,10 @@ export const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: 
                       />
                     </div>
                   </motion.div>
-                </SignedIn>
+                </SignedIn> */}
 
                 {/* Sign Up Button */}
-                <SignedOut>
+                {/* <SignedOut>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -104,7 +104,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: 
                       />
                     </Button>
                   </motion.div>
-                </SignedOut>
+                </SignedOut> */}
               </div>
             </motion.div>
   

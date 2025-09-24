@@ -81,7 +81,7 @@ export default function GoldencareLandingPage() {
             whileTap={{ scale: 1.1 }}
             className="bg-white bg-opacity-10 mt-5 backdrop-filter backdrop-blur-md rounded-full p-3"
           >
-            <Link href="/Services">
+            <Link href="/VirzeonX">
               <ArrowLeft className="size-3 md:size-4 text-black" />
             </Link>
           </motion.div>

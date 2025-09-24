@@ -85,6 +85,8 @@ export default function TeamPage() {
             (member) => member.status === undefined || member.status === 1
           );
           setTeamMembers(activeMembers);
+          console.log('active members');
+          console.log(activeMembers);
         } else {
           throw new Error(data.message || "Failed to fetch team members");
         }
@@ -106,10 +108,14 @@ export default function TeamPage() {
     (member) => activeTab === "all" || member.category === activeTab
   );
 
+
   // Retry function for error state
   const handleRetry = () => {
     window.location.reload();
   };
+
+  console.log(filteredMembers);
+  console.log(teamMembers);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white overflow-hidden cursor-default">

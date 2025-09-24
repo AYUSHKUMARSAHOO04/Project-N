@@ -80,7 +80,7 @@ export default function HealthMate() {
               whileTap={{ scale: 1.1 }}
               className="bg-white bg-opacity-10 rounded-full p-3 transition-all duration-200 hover:bg-opacity-20 active:bg-white active:bg-opacity-30 active:scale-95"
             >
-              <Link href="/Services">
+              <Link href="/VirzeonX">
                 <ArrowLeft className="size-4 md:size-5 text-black" />
               </Link>
             </motion.div>

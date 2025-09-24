@@ -13,7 +13,7 @@ export const menuItems = [
   },
   {
     name: "Services",
-    path: "/Services",
+    path: "/newService", //newService -> previously it was /Services
     image:
       "https://res.cloudinary.com/dg3qhhnjo/image/upload/v1749716057/Service_fyitnj.jpg",
   },

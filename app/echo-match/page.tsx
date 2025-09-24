@@ -1,5 +1,8 @@
 "use client";
 
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 import { useEffect, useRef, useState } from "react";
 import { emotionAudios, EmotionType } from "./helper/emotionAudios";
 import CustomCursor from "@/components/shared/custom-cursor";
@@ -9,9 +12,21 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { Slider } from "@/components/ui/slider";
 
-const emotions: EmotionType[] = ["Happy", "Sad", "Love"];
-
+const emotions: EmotionType[] = [
+  "Happy",
+  "Sad",
+  "Love",
+  "Dark",
+  "Spiritual",
+  "Energetic",
+  "Melancholic",
+  "Uplifting",
+  "Relaxing",
+];
 export default function GamePage() {
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const router = useRouter();
     const containerRef = useRef<HTMLDivElement>(null);
     const audioRef = useRef<HTMLAudioElement | null>(null);
     const playerRef = useRef<any>(null);
@@ -72,6 +87,31 @@ export default function GamePage() {
 
         setShowPlayAgain(true);
     };
+
+     useEffect(() => {
+        const base = process.env.NEXT_PUBLIC_API_URL;
+    axios
+      .get(`${base}/auth/user`, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
+
+  if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
 
     return (
         <div

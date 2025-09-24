@@ -13,7 +13,7 @@ export default function LandingPage() {
       <ParticlesBackground/>
       <div className="w-full h-full flex flex-col gap-8 lg:gap-10 overflow-hidden ">
         <div className="flex gap-2 justify-between items-center mb-20 lg:mb-10 px-4">
-          <Link href="/Services">
+          <Link href="/VirzeonX">
             <div className="bg-white bg-opacity-10 rounded-full p-3 transition-all duration-200 hover:bg-opacity-20 active:bg-white active:bg-opacity-30 active:scale-95">
               <ArrowLeft className="size-4 md:size-5 text-black" />
             </div>

@@ -31,7 +31,7 @@ export const pioneers: TeamMember[] = [
   {
     id: "Cto",
     name: "Saumik Chakraborty",
-    role: "CTO",
+    role: "CIO",
     description:
       "Saumik Chakraborty is the Chief Intelligence Officer(CIO) at NirveonX and a final-year B.Tech CSE student at NIST University. A passionate machine learning engineer, he specializes in AI, backend development, and data engineering. As a finalist in the Infosys Global Hackathon and Hack4Bihar, Saumik has built solutions like AI Interviewer, LinguaBridge, and GroqAI Chatbot. At NirveonX, he leads the development of intelligent systems that power AI-driven healthcare—ranging from mental health bots to multilingual sentiment engines—combining technical expertise with a user-first approach to deliver scalable, impactful solutions that align with the company’s mission of responsible, tech-enabled innovation.",
     avatar:

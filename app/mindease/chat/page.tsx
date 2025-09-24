@@ -1,4 +1,8 @@
 'use client'
+
+import axios from "axios";
+import { useRouter } from "next/navigation";
+
 import { useEffect, useState, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import {
@@ -34,6 +38,28 @@ type ChatSession = {
 };
 
 export default function MindEasePage() {
+  const [user, setUser] = useState(null);
+    const [authloading, setAuthLoading] = useState(true);
+    const router = useRouter();
+
+    //checking user authentication
+  useEffect(() => {
+    const base = process.env.NEXT_PUBLIC_API_URL;
+    axios
+      .get(`${base}/auth/user`, {
+        withCredentials: true,
+      })
+      .then((res) => {
+        setUser(res.data.user);
+        setAuthLoading(false);
+      })
+      .catch(() => {
+        setUser(null);
+        setAuthLoading(false);
+        router.push("/signup");
+      });
+  }, [router]);
+    
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [sidebarDrawerOpen, setSidebarDrawerOpen] = useState(false);
   const [input, setInput] = useState('');
@@ -248,6 +274,14 @@ export default function MindEasePage() {
       handleSend();
     }
   };
+
+  if (authloading) {
+    return (
+      <div className="flex h-screen items-center justify-center text-white">
+        Loading...
+      </div>
+    );
+  }
 
   return (
     <div className="flex h-screen overflow-hidden relative bg-gradient-to-br from-gray-900 to-gray-950">

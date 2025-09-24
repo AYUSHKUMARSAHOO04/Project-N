@@ -50,7 +50,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "Cooooo",
     name: "Sanjana Chaudhary",
-    role: "COO",
+    role: "HR Inter",
     category: "leadership",
     education: "BTECH (CSE), NIST",
     avatar:
@@ -68,7 +68,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: "co-founder and coo",
     name: "Kasu Naren Karthik Raju",
-    role: "Co-Founder and COO",
+    role: "Board Member",
     category: "leadership",
     education: "BTECH(AIML) , JNTUH",
     avatar:

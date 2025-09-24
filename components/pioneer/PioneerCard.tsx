@@ -104,17 +104,10 @@ export default function PioneerCard({ member,numofmem }: PioneerCardProps) {
   return (
     <section
       ref={ref}
-      className="w-full flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 min-h-screen px-4 sm:px-8 md:px-12 lg:px-16"
+      className="w-full mt-7 flex flex-col items-center justify-center gap-12 md:flex-row md:gap-24 min-h-screen px-4 sm:px-8 md:px-12 lg:px-16"
     >
-      {/* Left Content */}
-      <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-100">{member.name}</h2>
-        <h3 className="text-sm sm:text-base font-bold text-[#668bb0]">{member.role}</h3>
-        <p className="text-base sm:text-lg text-gray-400">{member.description}</p>
-      </div>
-
-      {/* Right: Animated Image & Background */}
-      <div className="relative w-[250px] h-[250px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] flex items-center justify-center rounded-full overflow-visible">
+      {/* Animated Image & Background - First on Mobile */}
+      <div className="relative w-[250px] h-[250px] sm:w-[280px] sm:h-[280px] md:w-[320px] md:h-[320px] flex items-center justify-center rounded-full overflow-visible order-1 md:order-2">
         {/* Moving Dotted Circle */}
         <motion.div
           initial={{ x: 900, opacity: 0 }}
@@ -184,6 +177,13 @@ export default function PioneerCard({ member,numofmem }: PioneerCardProps) {
             />
           </motion.div>
         </motion.div>
+      </div>
+
+      {/* Content - Second on Mobile */}
+      <div className="w-full md:w-1/2 space-y-4 text-center md:text-left order-2 md:order-1">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-100">{member.name}</h2>
+        <h3 className="text-sm sm:text-base font-bold text-[#668bb0]">{member.role}</h3>
+        <p className="text-base sm:text-lg text-gray-400">{member.description}</p>
       </div>
     </section>
   );

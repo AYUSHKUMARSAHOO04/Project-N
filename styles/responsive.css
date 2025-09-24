@@ -1,0 +1,101 @@
+/* =============================================================================
+   Tailboot Lite – Responsive Grid System
+   Description: Custom responsive utility classes inspired by Bootstrap,
+   designed to be Tailwind-compatible without conflicts.
+   ============================================================================= */
+
+/* ==========================================================================
+   Global Styles
+   ========================================================================== */
+:root {
+  --tailboot-lg: 62.5%;
+  --tailboot-md: 58%;
+  --tailboot-sm: 52%;
+  --tailboot-below-sm: 45%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Row Container
+   ========================================================================== */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Large Devices (Desktops & Laptops) – width > 1000px
+   ========================================================================== */
+
+.col-lg-12 { width: 100%; }
+.col-lg-10 { width: calc(100% / 12 * 10); }
+.col-lg-8  { width: calc(100% / 12 * 8); }
+.col-lg-6  { width: calc(100% / 12 * 6); }
+.col-lg-4  { width: calc(100% / 12 * 4); }
+.col-lg-2  { width: calc(100% / 12 * 2); }
+
+/* ==========================================================================
+   Medium Devices (Tablets) – 750px to 1000px
+   ========================================================================== */
+
+@media (max-width: 1000px) {
+  .col-md-12 { width: 100%; }
+  .col-md-10 { width: calc(100% / 12 * 10); }
+  .col-md-8  { width: calc(100% / 12 * 8); }
+  .col-md-6  { width: calc(100% / 12 * 6); }
+  .col-md-4  { width: calc(100% / 12 * 4); }
+  .col-md-2  { width: calc(100% / 12 * 2); }
+}
+
+/* ==========================================================================
+   Small Devices (Mobiles - Landscape) – 500px to 750px
+   ========================================================================== */
+
+@media (max-width: 750px) {
+  .col-sm-12 { width: 100%; }
+  .col-sm-10 { width: calc(100% / 12 * 10); }
+  .col-sm-8  { width: calc(100% / 12 * 8); }
+  .col-sm-6  { width: calc(100% / 12 * 6); }
+  .col-sm-4  { width: calc(100% / 12 * 4); }
+  .col-sm-2  { width: calc(100% / 12 * 2); }
+}
+
+/* ==========================================================================
+   Extra Small Devices (Mobiles - Portrait) – < 500px
+   ========================================================================== */
+
+@media (max-width: 500px) {
+  .col-12 { width: 100%; }
+  .col-10 { width: calc(100% / 12 * 10); }
+  .col-8  { width: calc(100% / 12 * 8); }
+  .col-6  { width: calc(100% / 12 * 6); }
+  .col-4  { width: calc(100% / 12 * 4); }
+  .col-2  { width: calc(100% / 12 * 2); }
+}
+
+html.responsive {
+  font-size: var(--tailboot-below-sm);
+}
+
+@media (min-width: 500px) {
+  html.responsive {
+    font-size: var(--tailboot-sm);
+  }
+}
+
+@media (min-width: 750px) {
+  html.responsive {
+    font-size: var(--tailboot-md);
+  }
+}
+
+@media (min-width: 1000px) {
+  html.responsive {
+    font-size: var(--tailboot-lg);
+  }
+}
