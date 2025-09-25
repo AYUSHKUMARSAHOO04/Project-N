@@ -21,7 +21,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/fitronx",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926604/FitronX_ty8omf.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758817264/fitronx_ea0teu.png",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/HealthMateLanding",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926656/telehealth-consultation_uylybn.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816753/Gemini_Generated_Image_aj84e9aj84e9aj84_xuk2qk.png",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/goldencare",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926657/service-goldencare-pic_l4i5oq.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_b5iypjb5iypjb5iy_mdwkgr.png",
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/mindease",
-      url : "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926656/girl-sitting-pose_yvyaxi.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_ov3y83ov3y83ov3y_jiaylc.png",
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/pet-ai",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926657/petai_l3rvpm.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816768/Gemini_Generated_Image_pj34eapj34eapj34_loybml.png",
     },
   ];
   return (
@@ -91,11 +91,17 @@ const page = () => {
             </p>
           </div>
 
-          <div className="flex flex-col max-h-[75vh] lg:overflow-auto col-lg-6 col-md-12" suppressHydrationWarning>
+          <div
+            className="flex flex-col max-h-[75vh] lg:overflow-auto col-lg-6 col-md-12"
+            suppressHydrationWarning
+          >
             <div className="row">
               {virzeonXServiceData.map((service) => (
-                <div key={service.id} className="col-lg-6 col-md-6 col-sm-12 pr-[1rem] pb-[2rem]">
-                  <Link href={service.path} >
+                <div
+                  key={service.id}
+                  className="col-lg-6 col-md-6 col-sm-12 pr-[1rem] pb-[2rem]"
+                >
+                  <Link href={service.path}>
                     <div className="relative group flex flex-col overflow-hidden rounded-xl shadow-lg bg-gray-100/5 text-white backdrop-blur-sm transition-colors duration-500 ease-in-out">
                       {/* Gradient Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-0"></div>
