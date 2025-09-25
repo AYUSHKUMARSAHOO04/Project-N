@@ -20,7 +20,7 @@ import Signup from '@/components/Auth/signup';
 export const NAV_ITEMS = [
   { href: "home", label: "Home" },
   { href: "Features", label: "Features" },
-  { href: "Services", label: "Services" },
+  { href: "newService", label: "Services" },
   { href: "Pioneers", label: "Pioneers" },
   // { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },

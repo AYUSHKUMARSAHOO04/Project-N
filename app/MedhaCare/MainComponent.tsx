@@ -29,21 +29,25 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/FastMediX",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/6_rzznsi.png",    },
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/6_rzznsi.png",
+    },
     {
       id: 3,
       title: "PharmXPlus",
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/PharmXPlus",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/5_wpreuy.png",    },
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/5_wpreuy.png",
+    },
     {
       id: 4,
       title: "AmboRapid",
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/AmboRapid",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/4_dprfyt.png",    },
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/4_dprfyt.png",
+    },
+    
     
   ];
   return (

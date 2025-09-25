@@ -53,7 +53,8 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/mindease",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_ov3y83ov3y83ov3y_jiaylc.png",
+      url : "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_ov3y83ov3y83ov3y_jiaylc.png",
+
     },
     {
       id: 6,
