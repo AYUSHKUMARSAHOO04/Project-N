@@ -10,7 +10,7 @@ import "./globals.css";
 //   UserButton,
 // } from "@clerk/nextjs";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-
+import SeoProvider from './seo-provider'
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,13 +22,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "NirveonX | AI-Powered Healthcare Platform",
-    template: "%s | NirveonX",
-  },
+  title: "Nirveonx",
   description:
     "AI-powered healthcare platform providing personalized medical assistance, pet care, elder support, and mental wellness through innovative telehealth solutions.",
   keywords: [
+    "modern healthcare",
+    "ai healthcare company",
+    "nirveonx",
     "healthcare",
     "AI healthcare",
     "telehealth",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     telephone: false,
     address: false,
   },
-  metadataBase: new URL("https://nirveonx.com"),
+  metadataBase: new URL("https://project-n-opal.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "NirveonX | Revolutionizing Healthcare with AI",
     description:
       "Experience the future of healthcare with AI-powered diagnostics, virtual consultations, pet care, and mental wellness support.",
-    url: "https://nirveonx.com",
+    url: "https://project-n-opal.vercel.app.com",
     siteName: "NirveonX",
     locale: "en_US",
     type: "website",
@@ -108,6 +108,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
+        <SeoProvider>{children}</SeoProvider>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
