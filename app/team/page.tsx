@@ -82,7 +82,7 @@ export default function TeamPage() {
         if (data.success && data.data) {
           // Filter out inactive members (status !== 1) if needed
           const activeMembers = data.data.filter(
-            (member) => member.status === undefined || member.status === 1
+            (member) => member.status === undefined || member.status === 0
           );
           setTeamMembers(activeMembers);
           console.log('active members');

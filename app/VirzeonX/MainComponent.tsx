@@ -21,7 +21,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/fitronx",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926604/FitronX_ty8omf.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758817264/fitronx_ea0teu.png",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/HealthMateLanding",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926656/telehealth-consultation_uylybn.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816753/Gemini_Generated_Image_aj84e9aj84e9aj84_xuk2qk.png",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/goldencare",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926657/service-goldencare-pic_l4i5oq.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_b5iypjb5iypjb5iy_mdwkgr.png",
     },
     {
       id: 5,
@@ -53,7 +53,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/mindease",
-      url : "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926656/girl-sitting-pose_yvyaxi.webp",
+      url : "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816767/Gemini_Generated_Image_ov3y83ov3y83ov3y_jiaylc.png",
     },
     {
       id: 6,
@@ -61,7 +61,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/pet-ai",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757926657/petai_l3rvpm.webp",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816768/Gemini_Generated_Image_pj34eapj34eapj34_loybml.png",
     },
   ];
   return (

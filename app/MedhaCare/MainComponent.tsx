@@ -21,7 +21,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/forum",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1755869157/CuraForgeX_tp52fg.jpg",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816781/Gemini_Generated_Image_v2tszkv2tszkv2ts_zqeewl.png",
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/FastMediX",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757928362/ChatGPT_Image_Sep_15_2025_02_55_48_PM_lx0lga.png",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/6_rzznsi.png",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/PharmXPlus",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757928309/ChatGPT_Image_Sep_15_2025_02_54_32_PM_foo46v.png",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/5_wpreuy.png",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const page = () => {
       description:
         "AI-driven fitness and wellness platform offering personalized workout plans and health tracking.",
       path: "/AmboRapid",
-      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1757928207/ChatGPT_Image_Sep_15_2025_02_53_07_PM_ntplxt.png",
+      url: "https://res.cloudinary.com/dnfq7ty1x/image/upload/v1758816741/4_dprfyt.png",
     },
     
   ];
