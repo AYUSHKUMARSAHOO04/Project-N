@@ -57,24 +57,24 @@ export default function BubblePage() {
   }, []);
 
   // Second useEffect: Check user authentication
-  useEffect(() => {
-    if (!mounted) return;
+  // useEffect(() => {
+  //   if (!mounted) return;
 
-    const base = process.env.NEXT_PUBLIC_API_URL;
-    axios
-      .get(`${base}/auth/user`, {
-        withCredentials: true,
-      })
-      .then((res) => {
-        setUser(res.data.user);
-        setLoading(false);
-      })
-      .catch(() => {
-        setUser(null);
-        setLoading(false);
-        router.push("/signup");
-      });
-  }, [router, mounted]);
+  //   const base = process.env.NEXT_PUBLIC_API_URL;
+  //   axios
+  //     .get(`${base}/auth/user`, {
+  //       withCredentials: true,
+  //     })
+  //     .then((res) => {
+  //       setUser(res.data.user);
+  //       setLoading(false);
+  //     })
+  //     .catch(() => {
+  //       setUser(null);
+  //       setLoading(false);
+  //       router.push("/signup");
+  //     });
+  // }, [router, mounted]);
 
   // Third useEffect: Load high score (client-only)
   useEffect(() => {
@@ -325,13 +325,13 @@ export default function BubblePage() {
     return <div className="w-full h-screen bg-gradient-to-b from-gray-900 via-slate-900 to-black" />;
   }
 
-  if (loading) {
-    return (
-      <div className="flex h-screen items-center justify-center text-white">
-        Loading...
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="flex h-screen items-center justify-center text-white">
+  //       Loading...
+  //     </div>
+  //   );
+  // }
 
   return (
     <div 
